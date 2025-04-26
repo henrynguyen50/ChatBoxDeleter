@@ -6,5 +6,27 @@
     "action": {
       "default_popup": "popup.html",
       "default_icon": "icon.png"
-    }
+    },
+    "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+    },
+    
+    "content_scripts": [
+      {
+        "js": ["scripts/content.js"],
+        "matches": [
+            "https://streamed.su/watch/*",
+            "https://the.streameast.app/*",
+            "https://www.totalsportek100.com/*",
+            "https://www.streameast.gd/*",
+            "https://1stream.eu/*",
+            "https://crackstreams.cx/live/*"
+        ]
+      }  
+    ]
+    
+
   }
