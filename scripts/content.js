@@ -12,10 +12,18 @@ const chatBoxClasses = [
 
 ]
 
+const chatBoxIDs = [
+    "chat-col"
+]
 
 
 //loop through chatBoxClasses and delete 
 chatBoxClasses.forEach(className => {
     const elements = document.querySelectorAll(className);
     elements.forEach(el => el.remove()); //remove each element
+})
+
+chatBoxIDs.forEach(id => {
+    const elements = document.getElementById(id);
+    elements.forEach(el => el.remove())
 })
