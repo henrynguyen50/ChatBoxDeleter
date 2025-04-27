@@ -1,0 +1,18 @@
+body {
+    width: 300px; /* Adjust the width */
+    height: 200px; /* Let height adjust based on content */
+    font-family: YEEZY; /* Set a nice font */
+}
+
+.h1-like { 
+    font-size: 2em;  /* Adjust the size to be like an h1 */
+    font-weight: bold; /* Make it bold like h1 */
+    margin-top: 0;   /* Remove the top margin */
+    margin-bottom: 0; /* Remove the bottom margin */
+    color: red
+}
+
+@font-face {
+    font-family: YEEZY;
+    src: url(yeezy_tstar-light-webfont.woff);
+}
