@@ -15,7 +15,9 @@ const chatBoxClasses = [
 //divs
 const chatBoxIDs = [
     "chat-col",
-    "chat-messages"
+    "chat-messages",
+    "testing",
+    "iframeHolder"
 ]
 
 
@@ -27,5 +29,5 @@ chatBoxClasses.forEach(className => {
 
 chatBoxIDs.forEach(id => {
     const elements = document.getElementById(id);
-    elements.forEach(el => el.remove())
+    if(elements) elements.remove();
 })
