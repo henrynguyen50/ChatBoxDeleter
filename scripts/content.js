@@ -22,12 +22,25 @@ const chatBoxIDs = [
 
 
 //loop through chatBoxClasses and delete 
-chatBoxClasses.forEach(className => {
+function removeChat(attempt = 0) {
+    let delay = 1000
+    const maxRetries = 5
+    chatBoxClasses.forEach(className => {
     const elements = document.querySelectorAll(className);
     elements.forEach(el => el.remove()); //remove each element
-})
+    })
 
-chatBoxIDs.forEach(id => {
+    chatBoxIDs.forEach(id => {
     const elements = document.getElementById(id);
     if(elements) elements.remove();
-})
+    })
+
+    if(attempt < maxRetries) {
+        delay = delay * (2 ** attempt); //exponential dropoff
+        setTimeout(() => { removeChat(attempt + 1), delay});
+    }
+
+}
+
+removeChat();
+
