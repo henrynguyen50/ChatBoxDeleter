@@ -7,9 +7,22 @@
     "permissions": [
       "tabs"
     ],
-    
+
     "host_permissions": [
-      "https://*/*"
+      "https://streamed.su/watch/*",
+            "https://the.streameast.app/*",
+            "https://www.totalsportek100.com/*",
+            "https://www.streameast.gd/*",
+            "https://1stream.eu/*",
+            "https://crackstreams.cx/live/*",
+            "https://streameasttv.net/*",
+            "https://720pstream.nu/*",
+            "https://daddylive.mp/*",
+            "https://ppv.wtf/live/*",
+            "https://ppv.to/*",
+            "https://ppvs.su/*",
+            "https://dailypudding.com/*",
+            "https://visualnewshub.com/*"
     ],
     "action": {
       "default_popup": "popup.html",
