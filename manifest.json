@@ -1,8 +1,16 @@
 {
     "name": "Right To Censor",
     "description": "Delete chatboxes from illegal stream sites",
-    "version": "2.0",
+    "version": "3.0",
     "manifest_version": 3,
+
+    "permissions": [
+      "tabs"
+    ],
+    
+    "host_permissions": [
+      "https://*/*"
+    ],
     "action": {
       "default_popup": "popup.html",
       "default_icon": "images/RTC.png"
@@ -28,11 +36,17 @@
             "https://720pstream.nu/*",
             "https://daddylive.mp/*",
             "https://ppv.wtf/live/*",
+            "https://ppv.to/*",
+            "https://ppvs.su/*",
             "https://dailypudding.com/*",
             "https://visualnewshub.com/*"
         ]
       }  
-    ]
+    ],
+    
+    "background": {
+        "service_worker": "scripts/background.js"
+    }
     
 
   }
