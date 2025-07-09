@@ -21,13 +21,12 @@ const chatBoxIDs = [
 ]
 
 
-//loop through chatBoxClasses and delete 
 function removeChat(attempt = 0) {
     let delay = 1000
     const maxRetries = 5
     chatBoxClasses.forEach(className => {
     const elements = document.querySelectorAll(className);
-    elements.forEach(el => el.remove()); //remove each element
+    elements.forEach(el => el.remove()); 
     })
 
     chatBoxIDs.forEach(id => {
