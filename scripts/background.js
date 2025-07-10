@@ -1,5 +1,7 @@
 const STREAMING_SITES = [
   "streamed.su",
+  "streamed.st",
+  "streamed.pk",
   "the.streameast.app",
   "totalsportek100.com",
   "streameast.gd",
@@ -10,7 +12,8 @@ const STREAMING_SITES = [
   "daddylive.mp",
   "ppv.wtf",
   "ppv.to",
-  "ppvs.su"
+  "ppvs.su",
+  "techradan.com"
 ];
 
 chrome.tabs.onCreated.addListener((newTab) => {

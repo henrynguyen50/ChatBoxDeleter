@@ -9,21 +9,25 @@ const chatBoxClasses = [
     ".no-pm", //720pstream
     ".message-window",
     ".box", //daddylive
-    ".bg-gray-900.p-2.h-96.verflow-y-scroll.rounded"//crackstreams
+    ".bg-gray-900.p-2.h-96.verflow-y-scroll.rounded",//crackstreams
+    ".live-chat-icon-container",
+    'iframe[src="https://chat.dailywrestling.cc:4343/?aew"]', //instead of using class or id use iframe for live chats 
 
 ]
-//divs
+//ids
 const chatBoxIDs = [
-    "chat-col",
-    "chat-messages",
-    "testing",
-    "iframeHolder"
+    'chat-col',
+    'chat-messages',
+    'testing',
+    'iframeHolder',
+    'chat-container'
 ]
 
 
 function removeChat(attempt = 0) {
     let delay = 1000
-    const maxRetries = 5
+    const maxRetries = 1000
+
     chatBoxClasses.forEach(className => {
     const elements = document.querySelectorAll(className);
     elements.forEach(el => el.remove()); 
@@ -33,6 +37,7 @@ function removeChat(attempt = 0) {
     const elements = document.getElementById(id);
     if(elements) elements.remove();
     })
+
 
     if(attempt < maxRetries) {
         delay = delay * (2 ** attempt); //exponential dropoff
