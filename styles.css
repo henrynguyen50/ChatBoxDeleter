@@ -1,6 +1,6 @@
 body {
-    width: 300px; /* Adjust the width */
-    height: 200px; /* Let height adjust based on content */
+    width: 230px; /* Adjust the width */
+    height: 250px; /* Let height adjust based on content */
     font-family: YEEZY; /* Set a nice font */
 }
 
@@ -15,4 +15,9 @@ body {
 @font-face {
     font-family: YEEZY;
     src: url(yeezy_tstar-light-webfont.woff);
+}
+
+img{
+    max-width:50px;
+    max-height:50px;
 }
