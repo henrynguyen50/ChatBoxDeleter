@@ -19,7 +19,6 @@ const chatBoxIDs = [
     'chat-col',
     'chat-messages',
     'testing',
-    'iframeHolder',
     'chat-container'
 ]
 
