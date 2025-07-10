@@ -9,7 +9,9 @@
     ],
 
     "host_permissions": [
-      "https://streamed.su/watch/*",
+            "https://streamed.su/watch/*",
+            "https://streamed.st/watch/*",
+            "https://streamed.pk/watch/*",
             "https://the.streameast.app/*",
             "https://www.totalsportek100.com/*",
             "https://www.streameast.gd/*",
@@ -21,8 +23,7 @@
             "https://ppv.wtf/live/*",
             "https://ppv.to/*",
             "https://ppvs.su/*",
-            "https://dailypudding.com/*",
-            "https://visualnewshub.com/*"
+            "https://techradan.com/*"
     ],
     "action": {
       "default_popup": "popup.html",
@@ -40,6 +41,8 @@
         "js": ["scripts/content.js"],
         "matches": [
             "https://streamed.su/watch/*",
+            "https://streamed.st/watch/*",
+            "https://streamed.pk/watch/*",
             "https://the.streameast.app/*",
             "https://www.totalsportek100.com/*",
             "https://www.streameast.gd/*",
@@ -51,8 +54,7 @@
             "https://ppv.wtf/live/*",
             "https://ppv.to/*",
             "https://ppvs.su/*",
-            "https://dailypudding.com/*",
-            "https://visualnewshub.com/*"
+            "https://techradan.com/*"
         ]
       }  
     ],
