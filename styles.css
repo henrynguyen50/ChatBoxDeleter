@@ -21,3 +21,10 @@ img{
     max-width:50px;
     max-height:50px;
 }
+
+.logo-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
