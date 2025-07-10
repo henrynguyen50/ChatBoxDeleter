@@ -2,7 +2,7 @@
     "name": "Right To Censor",
     "description": "Delete chatboxes from illegal stream sites",
     "version": "4.0",
-    "manifest_version": 4,
+    "manifest_version": 3,
 
     "permissions": [
       "tabs"
