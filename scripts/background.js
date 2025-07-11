@@ -13,7 +13,9 @@ const STREAMING_SITES = [
   "ppv.wtf",
   "ppv.to",
   "ppvs.su",
-  "techradan.com"
+  "techradan.com",
+  "visualnewshub.com",
+  "dailypudding.com"
 ];
 
 chrome.tabs.onCreated.addListener((newTab) => {
