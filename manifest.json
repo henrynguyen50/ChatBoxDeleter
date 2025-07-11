@@ -1,7 +1,7 @@
 {
     "name": "Right To Censor",
     "description": "Delete chatboxes from illegal stream sites",
-    "version": "4.0",
+    "version": "5.0",
     "manifest_version": 3,
 
     "permissions": [
@@ -23,7 +23,9 @@
             "https://ppv.wtf/live/*",
             "https://ppv.to/*",
             "https://ppvs.su/*",
-            "https://techradan.com/*"
+            "https://techradan.com/*",
+            "https://visualnewshub.com/*",
+            "https://dailypudding.com/*"
     ],
     "action": {
       "default_popup": "popup.html",
@@ -54,7 +56,9 @@
             "https://ppv.wtf/live/*",
             "https://ppv.to/*",
             "https://ppvs.su/*",
-            "https://techradan.com/*"
+            "https://techradan.com/*",
+            "https://visualnewshub.com/*",
+            "https://dailypudding.com/*"
         ]
       }  
     ],
