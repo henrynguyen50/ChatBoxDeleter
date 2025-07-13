@@ -1,7 +1,7 @@
 {
     "name": "Right To Censor",
     "description": "Delete chatboxes from illegal stream sites",
-    "version": "6.0",
+    "version": "7.0",
     "manifest_version": 3,
 
     "permissions": [
@@ -12,6 +12,7 @@
             "https://streamed.su/watch/*",
             "https://streamed.st/watch/*",
             "https://streamed.pk/watch/*",
+            "https://streami.su/watch/*",
             "https://the.streameast.app/*",
             "https://www.totalsportek100.com/*",
             "https://www.streameast.gd/*",
@@ -46,6 +47,7 @@
             "https://streamed.su/watch/*",
             "https://streamed.st/watch/*",
             "https://streamed.pk/watch/*",
+            "https://streami.su/watch/*",
             "https://the.streameast.app/*",
             "https://www.totalsportek100.com/*",
             "https://www.streameast.gd/*",
