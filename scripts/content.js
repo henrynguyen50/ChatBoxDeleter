@@ -12,7 +12,9 @@ const chatBoxClasses = [
     ".bg-gray-900.p-2.h-96.verflow-y-scroll.rounded",//crackstreams
     ".live-chat-icon-container",
     'iframe[src="https://chat.dailywrestling.cc:4343/?aew"]', //instead of using class or id use iframe for live chats 
-    'iframe[src="https://www2.cbox.ws/box/?boxid=2400909&boxtag=30q0rb&tid=1&tkey=5b7cdd27db70d81e"]'
+    'iframe[src="https://www2.cbox.ws/box/?boxid=2400909&boxtag=30q0rb&tid=1&tkey=5b7cdd27db70d81e"]',
+    'iframe[src="https://st.chatango.com/h5/gz/r0610250550/id.html"]'
+
 ]
 //ids
 const chatBoxIDs = [

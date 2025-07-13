@@ -15,7 +15,8 @@ const STREAMING_SITES = [
   "ppvs.su",
   "techradan.com",
   "visualnewshub.com",
-  "dailypudding.com"
+  "dailypudding.com",
+  "methstreams.ing"
 ];
 
 chrome.tabs.onCreated.addListener((newTab) => {

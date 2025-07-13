@@ -25,7 +25,8 @@
             "https://ppvs.su/*",
             "https://techradan.com/*",
             "https://visualnewshub.com/*",
-            "https://dailypudding.com/*"
+            "https://dailypudding.com/*",
+            "https://methstreams.ing/*"
     ],
     "action": {
       "default_popup": "popup.html",
