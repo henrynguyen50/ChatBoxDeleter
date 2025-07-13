@@ -1,7 +1,7 @@
 {
     "name": "Right To Censor",
     "description": "Delete chatboxes from illegal stream sites",
-    "version": "5.0",
+    "version": "6.0",
     "manifest_version": 3,
 
     "permissions": [
@@ -59,7 +59,8 @@
             "https://ppvs.su/*",
             "https://techradan.com/*",
             "https://visualnewshub.com/*",
-            "https://dailypudding.com/*"
+            "https://dailypudding.com/*",
+            "https://methstreams.ing/*"
         ]
       }  
     ],

@@ -11,9 +11,11 @@ const chatBoxClasses = [
     ".box", //daddylive
     ".bg-gray-900.p-2.h-96.verflow-y-scroll.rounded",//crackstreams
     ".live-chat-icon-container",
-    'iframe[src="https://chat.dailywrestling.cc:4343/?aew"]', //instead of using class or id use iframe for live chats 
+    //any chat that loads in after use iframe to remove
+    'iframe[src="https://chat.dailywrestling.cc:4343/?aew"]', 
     'iframe[src="https://www2.cbox.ws/box/?boxid=2400909&boxtag=30q0rb&tid=1&tkey=5b7cdd27db70d81e"]',
-    'iframe[src="https://st.chatango.com/h5/gz/r0610250550/id.html"]'
+    'iframe[src="https://st.chatango.com/h5/gz/r0610250550/id.html"]',
+    'iframe[src="https://www.youtube.com/live_chat?v=1-K8pOUDDO4&embed_domain=the.streameast.app&dark_theme=1"]'
 
 ]
 //ids
