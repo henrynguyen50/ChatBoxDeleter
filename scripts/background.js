@@ -18,7 +18,6 @@ const STREAMING_SITES = [
   "dailypudding.com",
   "methstreams.ing",
   "streami.su",
-  "mapple.tv"
 ];
 
 chrome.tabs.onCreated.addListener((newTab) => {
