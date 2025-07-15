@@ -27,7 +27,9 @@
             "https://techradan.com/*",
             "https://visualnewshub.com/*",
             "https://dailypudding.com/*",
-            "https://methstreams.ing/*"
+            "https://methstreams.ing/*",
+            "https://https://mapple.tv/*"
+            
     ],
     "action": {
       "default_popup": "popup.html",
@@ -62,7 +64,8 @@
             "https://techradan.com/*",
             "https://visualnewshub.com/*",
             "https://dailypudding.com/*",
-            "https://methstreams.ing/*"
+            "https://methstreams.ing/*",
+            "https://https://mapple.tv/*"
         ]
       }  
     ],
