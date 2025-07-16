@@ -28,7 +28,8 @@
             "https://visualnewshub.com/*",
             "https://dailypudding.com/*",
             "https://methstreams.ing/*",
-            "https://www.cineby.app/*"
+            "https://www.cineby.app/*",
+            "https://techdae.frl/*"
             
     ],
     "action": {
@@ -65,7 +66,9 @@
             "https://visualnewshub.com/*",
             "https://dailypudding.com/*",
             "https://methstreams.ing/*",
-            "https://www.cineby.app/*"
+            "https://www.cineby.app/*",
+            "https://techdae.frl/*"
+
         ]
       }  
     ],
