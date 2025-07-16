@@ -20,40 +20,42 @@ const STREAMING_SITES = [
   "streami.su",
 ];
 
+
+
 chrome.tabs.onCreated.addListener((newTab) => {
   if (newTab) {
-
-    if (newTab.url == '') {
-      //most new tabs start as '', so wait for it to update to see if ad or not
+    if(newTab.url == ''){
       setTimeout(() => {
-        chrome.tabs.get(newTab.id, (updatedTab) => {
-          //just an empty tab
-          if (updatedTab.url === 'chrome://newtab/' || updatedTab.url === 'chrome://newtab') {
+          //need to get the new tabs information after timeout, have to use id in parameter
+          chrome.tabs.get(newTab.id, (updatedTab) => {
+          if (updatedTab.url == 'chrome://newtab/' || updatedTab.url == 'chrome://newtab'){
             return;
           }
-          checkAndBlock(updatedTab);
-        });
-      }, 100); 
-      return;
+          removeTab(updatedTab)
+        })
+      },100)
+    }else{
+    removeTab(updatedTab)
     }
-    //if URL is not empty check immediately usually doesnt happen but for edge cases
-    checkAndBlock(newTab);
   }
 });
 
-function checkAndBlock(tab) {
-  chrome.tabs.get(tab.openerTabId, (openerTab) => {
-    const openerUrl = new URL(openerTab.url);
-    const originalHostname = openerUrl.hostname;
+function removeTab(tab) {
+    chrome.tabs.get(tab.openerTabId, (openerTab) => {
 
-    //need to loop through as searching for partials 
-    for (let i = 0; i < STREAMING_SITES.length; i++) {
-      const siteFromList = STREAMING_SITES[i];
+      const openerUrl = new URL(openerTab.url);
+      
+      const originalHostname = openerUrl.hostname;
 
-      if (originalHostname.includes(siteFromList)) {
-        chrome.tabs.remove(tab.id);
-        break;
+      //for loop needed as searching for partial, if did .includes on whole array would not do partial
+      for (let i = 0; i < STREAMING_SITES.length; i++) {
+        
+        const siteFromList = STREAMING_SITES[i];
+
+        if (originalHostname.includes(siteFromList)) {
+          chrome.tabs.remove(tab.id);
+          break;
+        }
       }
-    }
-  });
-}
+    });
+  }
