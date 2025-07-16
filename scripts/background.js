@@ -22,22 +22,38 @@ const STREAMING_SITES = [
 
 chrome.tabs.onCreated.addListener((newTab) => {
   if (newTab) {
-    //need callback function as .get is an async function 
-    chrome.tabs.get(newTab.openerTabId, (openerTab) => {
 
-      const openerUrl = new URL(openerTab.url);
-      const originalHostname = openerUrl.hostname;
-
-      //for loop needed as searching for partial, if did .includes on whole array would not do partial
-      for (let i = 0; i < STREAMING_SITES.length; i++) {
-        
-        const siteFromList = STREAMING_SITES[i];
-
-        if (originalHostname.includes(siteFromList)) {
-          chrome.tabs.remove(newTab.id);
-          break;
-        }
-      }
-    });
+    if (newTab.url == '') {
+      //most new tabs start as '', so wait for it to update to see if ad or not
+      setTimeout(() => {
+        chrome.tabs.get(newTab.id, (updatedTab) => {
+          //just an empty tab
+          if (updatedTab.url === 'chrome://newtab/' || updatedTab.url === 'chrome://newtab') {
+            return;
+          }
+          checkAndBlock(updatedTab);
+        });
+      }, 100); 
+      return;
+    }
+    //if URL is not empty check immediately usually doesnt happen but for edge cases
+    checkAndBlock(newTab);
   }
 });
+
+function checkAndBlock(tab) {
+  chrome.tabs.get(tab.openerTabId, (openerTab) => {
+    const openerUrl = new URL(openerTab.url);
+    const originalHostname = openerUrl.hostname;
+
+    //need to loop through as searching for partials 
+    for (let i = 0; i < STREAMING_SITES.length; i++) {
+      const siteFromList = STREAMING_SITES[i];
+
+      if (originalHostname.includes(siteFromList)) {
+        chrome.tabs.remove(tab.id);
+        break;
+      }
+    }
+  });
+}
