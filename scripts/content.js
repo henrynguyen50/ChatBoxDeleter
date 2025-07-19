@@ -24,9 +24,8 @@ const chatBoxClasses = [
 const chatBoxIDs = [
     'chat-col',
     'chat-messages',
-    'testing',
     'chat-container',
-    'iframeHolder'
+    
 ]
 
 

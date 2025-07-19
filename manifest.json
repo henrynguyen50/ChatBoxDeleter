@@ -1,7 +1,7 @@
 {
-    "name": "Right To Censor",
-    "description": "Delete chatboxes from illegal stream sites",
-    "version": "13.0",
+    "name": "The Stream Cleaner",
+    "description": "Clean chatboxes and pop up ads from illegal stream sites",
+    "version": "14.0",
     "manifest_version": 3,
 
     "permissions": [
@@ -34,13 +34,13 @@
     ],
     "action": {
       "default_popup": "popup.html",
-      "default_icon": "images/RTC.png"
+      "default_icon": "images/thecleaner32.png"
     },
     "icons": {
-    "16": "images/RTC16.png",
-    "32": "images/RTC32.png",
-    "48": "images/RTC48.png",
-    "128": "images/RTC128.png"
+    "16": "images/thecleaner16.png",
+    "32": "images/thecleaner32.png",
+    "48": "images/thecleaner48.png",
+    "128": "images/thecleaner128.png"
     },
     
     "content_scripts": [

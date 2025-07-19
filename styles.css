@@ -1,20 +1,24 @@
 body {
     width: 230px;
-    height: 250px; 
-    font-family: YEEZY; 
+    height:400px; 
+    font-family: bullet; 
 }
 
 .h1-like { 
     font-size: 2em;  
-    font-weight: bold; 
     margin-top: 0;   
     margin-bottom: 0; 
     color: red
 }
-
+.h1-bullet { 
+    font-size: 2em;  
+    margin-top: 0;   
+    margin-bottom: 0; 
+    color: black
+}
 @font-face {
-    font-family: YEEZY;
-    src: url(yeezy_tstar-light-webfont.woff);
+    font-family: bullet;
+    src: url(Capture\ it.ttf);
 }
 
 img{
