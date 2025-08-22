@@ -1,7 +1,7 @@
 {
     "name": "The Stream Cleaner",
     "description": "Clean chatboxes and pop up ads from illegal stream sites",
-    "version": "15.0",
+    "version": "16.0",
     "manifest_version": 3,
 
     "permissions": [
@@ -29,7 +29,8 @@
             "https://dailypudding.com/*",
             "https://methstreams.ing/*",
             "https://www.cineby.app/*",
-            "https://techdae.frl/*"
+            "https://techdae.frl/*",
+            "https://hexa.watch/*"
             
     ],
     "action": {
@@ -67,7 +68,8 @@
             "https://dailypudding.com/*",
             "https://methstreams.ing/*",
             "https://www.cineby.app/*",
-            "https://techdae.frl/*"
+            "https://techdae.frl/*",
+            "https://hexa.watch/*"
 
         ]
       }  
