@@ -11,7 +11,7 @@ const chatBoxClasses = [
     ".box", //daddylive
     //".bg-gray-900.p-2.h-96.verflow-y-scroll.rounded",//crackstreams
     ".live-chat-icon-container",
-    ".chat-container",
+    ".chat-container", //for streamed.pk
     //any chat that loads in after use iframe to remove
     'iframe[src="https://chat.dailywrestling.cc:4343/?aew"]', 
     'iframe[src="https://chat.dailywrestling.cc:4343/?wwe"]', 
