@@ -1,7 +1,7 @@
 {
     "name": "The Stream Cleaner",
     "description": "Clean chatboxes and pop up ads from illegal stream sites",
-    "version": "18.0",
+    "version": "19.0",
     "manifest_version": 3,
 
     "permissions": [

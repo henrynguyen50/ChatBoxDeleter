@@ -18,6 +18,7 @@ const STREAMING_SITES = [
   "dailypudding.com",
   "methstreams.ing",
   "streami.su",
+  "hexa.watch"
 ];
 
 
